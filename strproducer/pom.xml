@@ -11,7 +11,7 @@
 	<groupId>br.com.robson</groupId>
 	<artifactId>strproducer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>st-rproducer</name>
+	<name>str-producer</name>
 	<description>Demo Spring with Kafka</description>
 	<url/>
 	<licenses>
