@@ -13,7 +13,9 @@ public class StringProducerService {
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void sendMessage(String message){
-        kafkaTemplate.send("str-topic", message).whenComplete(
+        log.info("Enviando mensagem: {}", message);
+        kafkaTemplate.send("str-topic", message);
+                /*.whenComplete(
                 (result, e) -> {
                     if (result != null) {
                         log.info("Mensagem enviada com sucesso {}", result);
@@ -25,7 +27,7 @@ public class StringProducerService {
                         }
                     }
                 }
-        );
+        );*/
     }
 
 }
