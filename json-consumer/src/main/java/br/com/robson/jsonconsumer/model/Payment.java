@@ -1,8 +1,10 @@
-package br.com.robson.paymentservice.model;
+package br.com.robson.jsonconsumer.model;
 
 import lombok.Getter;
-import java.io.Serializable;
+import lombok.ToString;
 
+import java.io.Serializable;
+@ToString
 @Getter
 public class Payment implements Serializable {
 
